@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPAboutUsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-HQ-6PQ">
+                    <rect key="frame" x="134.5" y="109" width="106" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="106" id="1tF-s0-4Nn"/>
+                        <constraint firstAttribute="height" constant="106" id="9xK-xG-LQX"/>
+                        <constraint firstAttribute="width" constant="106" id="ap4-iB-rWu"/>
+                        <constraint firstAttribute="width" constant="106" id="fcE-qr-N7C"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="106" id="g6Z-N5-yQe"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1tF-s0-4Nn"/>
+                            <exclude reference="ap4-iB-rWu"/>
+                            <exclude reference="g6Z-N5-yQe"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ID-Lu-mUs">
+                    <rect key="frame" x="36" y="306" width="303" height="117"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="303" id="jjp-rR-B73"/>
+                        <constraint firstAttribute="height" constant="117" id="wbB-VL-Jae"/>
+                    </constraints>
+                    <string key="text">为迎合现代消费趋势，我们在美食、娱乐、购物的基础上，融合了理财充值、违章处理、失物招领、预约的士等服务，全力打造互联网综合服务新平台——易品APP。易品推出积分换购政策，让用户最大限度地享受优惠。同时，易品在与客户的交流中不断更新自己，努力为用户提供更为贴心、更具个性化的服务。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="易品1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-sD-fid">
+                    <rect key="frame" x="158" y="237" width="59" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="Zdx-2s-4PJ"/>
+                        <constraint firstAttribute="height" constant="32" id="t8S-07-QIU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2016-2021                    All rights reserved                              南京嘉易德信息科技有限公司" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3o-Zp-TOY">
+                    <rect key="frame" x="103" y="601" width="169" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="169" id="Nqf-hI-fjD"/>
+                        <constraint firstAttribute="height" constant="55" id="lTJ-7h-J8Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6ID-Lu-mUs" secondAttribute="trailing" constant="20" id="4dR-K7-Kh9"/>
+                <constraint firstItem="Etb-sD-fid" firstAttribute="top" secondItem="vdh-HQ-6PQ" secondAttribute="bottom" constant="17" id="5ZA-bk-BNE"/>
+                <constraint firstItem="6ID-Lu-mUs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Dkt-ru-cDu"/>
+                <constraint firstAttribute="bottom" secondItem="r3o-Zp-TOY" secondAttribute="bottom" constant="11" id="FAX-rN-5dg"/>
+                <constraint firstItem="Etb-sD-fid" firstAttribute="top" secondItem="vdh-HQ-6PQ" secondAttribute="bottom" constant="22" id="HAh-mc-0ob"/>
+                <constraint firstItem="vdh-HQ-6PQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="INc-ml-oGG"/>
+                <constraint firstItem="6ID-Lu-mUs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Sxx-AC-L7c"/>
+                <constraint firstAttribute="bottom" secondItem="6ID-Lu-mUs" secondAttribute="bottom" constant="20" id="Wv3-Io-WGo"/>
+                <constraint firstItem="vdh-HQ-6PQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="hyx-Yg-X5K"/>
+                <constraint firstItem="r3o-Zp-TOY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iz9-IO-eLL"/>
+                <constraint firstItem="Etb-sD-fid" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rz1-WQ-vPj"/>
+                <constraint firstItem="6ID-Lu-mUs" firstAttribute="top" secondItem="Etb-sD-fid" secondAttribute="bottom" constant="37" id="xfJ-1Y-9zw"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="5ZA-bk-BNE"/>
+                    <exclude reference="4dR-K7-Kh9"/>
+                    <exclude reference="Dkt-ru-cDu"/>
+                    <exclude reference="Wv3-Io-WGo"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-251" y="-183"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LOGO" width="105" height="105"/>
+    </resources>
+</document>

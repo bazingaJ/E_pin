@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPPointsController">
+            <connections>
+                <outlet property="headerBG" destination="cOk-cG-Rgr" id="Gun-Ln-I5G"/>
+                <outlet property="headerFL" destination="86M-mi-Ity" id="xoc-N2-m0N"/>
+                <outlet property="tableView" destination="yO2-n0-bxD" id="IaH-oE-Qhx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOk-cG-Rgr">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分账户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86M-mi-Ity">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="NrY-pU-6nz"/>
+                                <constraint firstAttribute="width" constant="72" id="uoe-jR-Vpf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     积分明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-6t-G3f">
+                            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Zsj-g3-NZM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="86M-mi-Ity" firstAttribute="leading" secondItem="cOk-cG-Rgr" secondAttribute="leading" constant="20" id="Aey-Fb-Odn"/>
+                        <constraint firstAttribute="bottom" secondItem="7jr-6t-G3f" secondAttribute="bottom" id="GJ1-ZO-hxI"/>
+                        <constraint firstItem="86M-mi-Ity" firstAttribute="top" secondItem="cOk-cG-Rgr" secondAttribute="top" id="cIo-Yp-5l9"/>
+                        <constraint firstAttribute="height" constant="137" id="oYh-L3-ukI"/>
+                        <constraint firstAttribute="trailing" secondItem="7jr-6t-G3f" secondAttribute="trailing" id="s1D-33-Hsf"/>
+                        <constraint firstItem="7jr-6t-G3f" firstAttribute="leading" secondItem="cOk-cG-Rgr" secondAttribute="leading" id="veY-WY-wmt"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yO2-n0-bxD">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cOk-cG-Rgr" secondAttribute="trailing" id="34u-2Z-NKY"/>
+                <constraint firstItem="yO2-n0-bxD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HLb-FX-8Xx"/>
+                <constraint firstAttribute="bottom" secondItem="yO2-n0-bxD" secondAttribute="bottom" id="Szy-cI-Tv7"/>
+                <constraint firstItem="cOk-cG-Rgr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hR8-Ni-KXl"/>
+                <constraint firstItem="yO2-n0-bxD" firstAttribute="top" secondItem="cOk-cG-Rgr" secondAttribute="bottom" id="jEJ-79-4bd"/>
+                <constraint firstItem="cOk-cG-Rgr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="jeI-EE-GIN"/>
+                <constraint firstAttribute="trailing" secondItem="yO2-n0-bxD" secondAttribute="trailing" id="orj-dd-dsE"/>
+            </constraints>
+            <point key="canvasLocation" x="304.5" y="385.5"/>
+        </view>
+    </objects>
+</document>

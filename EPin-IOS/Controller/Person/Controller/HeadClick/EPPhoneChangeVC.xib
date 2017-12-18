@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPPhoneChangeVC">
+            <connections>
+                <outlet property="errorLb" destination="OWX-PB-Oee" id="GBa-gh-xRL"/>
+                <outlet property="passTf" destination="jP4-im-6R9" id="NXb-DC-TGb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入手机登录密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2as-Rg-BRX">
+                    <rect key="frame" x="0.0" y="150" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="B3s-uf-Yi8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jP4-im-6R9">
+                    <rect key="frame" x="71.5" y="197" width="232" height="44"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="L0Q-hx-2FL"/>
+                        <constraint firstAttribute="width" constant="232" id="jgi-H9-Tly"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWX-PB-Oee">
+                    <rect key="frame" x="71.5" y="250" width="232" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="232" id="Za4-sB-Xw3"/>
+                        <constraint firstAttribute="height" constant="21" id="cUL-VI-q95"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OWX-PB-Oee" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7AL-At-7fb"/>
+                <constraint firstItem="OWX-PB-Oee" firstAttribute="top" secondItem="jP4-im-6R9" secondAttribute="bottom" constant="9" id="9ca-Oe-WlU"/>
+                <constraint firstItem="2as-Rg-BRX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K5U-0x-InU"/>
+                <constraint firstItem="jP4-im-6R9" firstAttribute="top" secondItem="2as-Rg-BRX" secondAttribute="bottom" constant="26" id="LVV-BQ-IjA"/>
+                <constraint firstAttribute="trailing" secondItem="2as-Rg-BRX" secondAttribute="trailing" id="eaY-my-v9g"/>
+                <constraint firstItem="jP4-im-6R9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l56-cB-D4e"/>
+                <constraint firstItem="2as-Rg-BRX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="yZs-pn-1eO"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

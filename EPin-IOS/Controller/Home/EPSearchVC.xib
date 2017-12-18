@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPSearchVC">
+            <connections>
+                <outlet property="tableVi_" destination="WH8-GA-2VL" id="3D3-tk-6Ne"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="WH8-GA-2VL">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1Oe-e6-38R"/>
+                        <outlet property="delegate" destination="-1" id="Y7y-bK-eIx"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="WH8-GA-2VL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="8Io-Z0-RO8"/>
+                <constraint firstAttribute="bottom" secondItem="WH8-GA-2VL" secondAttribute="bottom" id="Dxs-cU-508"/>
+                <constraint firstAttribute="trailing" secondItem="WH8-GA-2VL" secondAttribute="trailing" id="Fpc-au-3PW"/>
+                <constraint firstItem="WH8-GA-2VL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dlA-tv-Sl5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

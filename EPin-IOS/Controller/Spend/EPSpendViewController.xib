@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPSpendViewController">
+            <connections>
+                <outlet property="tableVi" destination="rFI-Wn-BsW" id="PD0-T2-6Ys"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rFI-Wn-BsW">
+                    <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PG4-Cx-yLF"/>
+                        <outlet property="delegate" destination="-1" id="X9J-gv-K3t"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rFI-Wn-BsW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="A6C-sS-xhx"/>
+                <constraint firstAttribute="trailing" secondItem="rFI-Wn-BsW" secondAttribute="trailing" id="NmB-V4-2gv"/>
+                <constraint firstAttribute="bottom" secondItem="rFI-Wn-BsW" secondAttribute="bottom" constant="49" id="WXH-gW-mpg"/>
+                <constraint firstItem="rFI-Wn-BsW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zL6-kA-Byw"/>
+            </constraints>
+            <point key="canvasLocation" x="167" y="188"/>
+        </view>
+    </objects>
+</document>

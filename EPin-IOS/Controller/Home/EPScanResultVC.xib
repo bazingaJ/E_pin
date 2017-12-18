@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPScanResultVC">
+            <connections>
+                <outlet property="resultLab" destination="PHD-qA-tCH" id="KUU-CE-kEI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="hAY-Lu-jOz" id="XR6-wN-jei"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫描出来的内容是:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdU-5J-eKv">
+                    <rect key="frame" x="225" y="80" width="150" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="7UU-yC-zkB"/>
+                        <constraint firstAttribute="height" constant="35" id="mEP-sW-Dlr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHD-qA-tCH">
+                    <rect key="frame" x="170" y="130" width="260" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="96S-pW-sof"/>
+                        <constraint firstAttribute="width" constant="260" id="HJw-y8-X1Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAY-Lu-jOz">
+                    <rect key="frame" x="0.0" y="198" width="600" height="402"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hAY-Lu-jOz" firstAttribute="top" secondItem="PHD-qA-tCH" secondAttribute="bottom" constant="8" id="1Hh-Ys-3N0"/>
+                <constraint firstAttribute="bottom" secondItem="hAY-Lu-jOz" secondAttribute="bottom" id="2Vn-V8-KoV"/>
+                <constraint firstItem="PHD-qA-tCH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3ZC-VD-8sD"/>
+                <constraint firstItem="hAY-Lu-jOz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JYe-V0-kaE"/>
+                <constraint firstItem="wdU-5J-eKv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="OL7-ZD-myE"/>
+                <constraint firstItem="PHD-qA-tCH" firstAttribute="top" secondItem="wdU-5J-eKv" secondAttribute="bottom" constant="15" id="PiZ-RG-1zt"/>
+                <constraint firstAttribute="trailing" secondItem="hAY-Lu-jOz" secondAttribute="trailing" id="dZY-aT-BiC"/>
+                <constraint firstItem="wdU-5J-eKv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hWx-gN-Olf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
